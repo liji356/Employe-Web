@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Header from './component/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Employedetalis from './component/Employedetalis';
+import Search from './component/Search';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' exact element={<Employedetalis/>}/>
+      <Route path='/search' exact element={<Search/>}/>
       
       
     </Routes>
